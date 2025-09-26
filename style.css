@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor1: #141827;
+    --cor2: #62455B;
+    --cor3: #736681;
+    --cor4: #C1D9D0;
+    --cor5: #FFFAE3;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--cor1);
+    box-shadow: 0px 0px 5px 1px var(--cor2);
+    position: fixed;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 70px;
+}
+
+ul > li > a {
+    text-decoration: none;
+    color: var(--cor5);
+    transition: 0.2s ease;
+}
+
+ul > li > a:hover {
+    background-color: var(--cor3);
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 1px var(--cor2);
+}
+
+#sobre {
+    width: 100%;
+    padding: 200px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+#sobre > div > img {
+    width: 300px;
+    border-radius: 50%;
+    border: 2px solid var(--cor3);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(211, 211, 211, 0.226);
+    box-shadow: 0px 0px 5px 1px rgb(211, 211, 211);
+    border-radius: 20px;
+    padding: 30px;
+    gap: 20px;
+}
+
+.card > p {
+    width: 500px;
+}
+
+.card > a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.767);
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    transition: 0.2s ease;
+}
+
+.card > a:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px 1px var(--cor3);
+}
+
+#tech {
+    width: 100%;
+    padding-bottom: 30px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+
+#tech > h2 {
+    background-color: var(--cor2);
+    box-shadow: 0px 0px 5px 1px var(--cor3);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.lista {
+    display: flex;
+    gap: 200px;
+    margin-top: 80px;
+}
+
+#front {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor2);
+    box-shadow: 0px 0px 5px 1px var(--cor3);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#back {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor2);
+    box-shadow: 0px 0px 5px 1px var(--cor3);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#proj {
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#proj > h2 {
+    color: var(--cor1);
+    font-size: 2em;
+}
+
+.projetos {
+    display: flex;
+    gap: 50px;
+}
+
+.projs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: var(--cor1);
+    color: var(--cor4);
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.projs > img {
+    width: 300px;
+    border: 2px solid var(--cor4);
+    border-radius: 15px;
+}
+
+.projetos > div > a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.767);
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.2s ease;
+}
+
+.projetos > div > a:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px 1px var(--cor3);
+}
+
+#contact {
+    width: 100%;
+    background-color: var(--cor1);
+    margin-top: 100px;
+    color: var(--cor5);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+}
+
+input {
+    width: 300px;
+    background-color: #62455b76;
+    border: none;
+    color: var(--cor4);
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.2s ease;
+}
+
+input:focus {
+    transform: scale(1.1);
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+    background-color: #62455b76;
+    border: none;
+    color: var(--cor4);
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.2s ease;
+}
+
+.form > button {
+    color: white;
+    background-color: rgba(0, 0, 255, 0.767);
+    width: 100px;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.2s ease;
+}
+
+.form > button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px 1px var(--cor3);
+}
+
+textarea:focus {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px 1px var(--cor3);
+}
+
+img {
+    width: 100px;
+}
