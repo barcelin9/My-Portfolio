@@ -269,6 +269,10 @@ img {
         font-size: 13px;
     }
 
+    ul {
+        gap: 10px;
+    }
+
     #sobre > div > img {
         width: 150px;
     }
