@@ -265,10 +265,9 @@ img {
 
 @media (max-width: 800px){
     header {
+        display: flex;
         justify-content: space-evenly;
         font-size: 13px;
-        padding-right: 60px;
-        padding-left: 60px;
     }
 
     #sobre > div > img {
