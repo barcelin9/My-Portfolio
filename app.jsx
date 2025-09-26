@@ -22,7 +22,7 @@ function Main() {
       <div className="card">
         <h1>Guilherme Barcelo</h1>
         <p>I'm a Fullstack developer. I'm coursing Software Engineering and I intend to be a professional developer.</p>
-        <a href="Nãoveja/Sério/Currículo de Guilherme OFICIAL.docx" download>Download CV</a>
+        <a href="Nãoveja/Sério/Currículo de Guilherme OFICIAL.pdf" download>Download CV</a>
       </div>
       <div className="picture">
         <img src="img/images.jpeg" alt="Minha foto" />
