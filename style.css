@@ -267,6 +267,8 @@ img {
     header {
         justify-content: space-evenly;
         font-size: 13px;
+        padding-right: 50px;
+        padding-left: 50px;
     }
 
     #sobre > div > img {
