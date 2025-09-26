@@ -270,6 +270,10 @@ img {
     }
 
     ul {
+        gap: 100px;
+    }
+
+    #sobre {
         gap: 20px;
     }
 
