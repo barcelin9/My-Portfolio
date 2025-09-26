@@ -270,11 +270,11 @@ img {
     }
 
     ul {
-        gap: 15px;
+        gap: 20px;
     }
 
     #sobre > div > img {
-        width: 150px;
+        width: 140px;
     }
 
     .card {
