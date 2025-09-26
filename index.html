@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <main id="main"></main>
+    <main id="tech"></main>
+    <main id="projects"></main>
+    
+    <form action="https://formsubmit.co/guilhermebarcn@gmail.com" method="POST" id="contact">
+      <h2>Contact me</h2>
+      <div className="form">
+        <input type="text" name="name" placeholder="Seu nome" required />
+        <input type="email" name="email" placeholder="Seu e-mail" required />
+        <textarea name="message" placeholder="Sua mensagem" required id="texto"></textarea>
+
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://google.com" />
+
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Exibir o consentimento de cookies
+            document.getElementById('cookieConsent').style.display = 'flex';
+
+            // Função para aceitar cookies
+            window.aceitarCookies = function () {
+                document.getElementById('cookieConsent').style.display = 'none';
+            };
+
+            // Validação do e-mail
+            document.querySelector('.contact-form').addEventListener('submit', function (event) {
+                const email = document.getElementById('email').value;
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                if (!emailPattern.test(email)) {
+                    alert('Por favor, insira um e-mail válido.');
+                    event.preventDefault(); // Evita que o formulário seja enviado
+                }
+            });
+        });
+    </script>
+
+    <!-- React + ReactDOM + Babel via CDN -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- Nosso app JSX -->
+    <script type="text/babel" src="app.jsx"></script>
+</body>
+
+</html>
