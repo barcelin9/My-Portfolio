@@ -265,7 +265,6 @@ img {
 
 @media (max-width: 800px){
     header {
-        display: flex;
         justify-content: space-evenly;
         font-size: 13px;
     }
